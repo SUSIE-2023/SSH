@@ -1,10 +1,10 @@
 #!/bin/bash
 if [ "${EUID}" -ne 0 ]; then
-		echo "You need to run this script as root"
+		echo "คุณต้องรันสคริปต์นี้โดยเป็นรูท"
 		exit 1
 fi
 if [ "$(systemd-detect-virt)" == "openvz" ]; then
-		echo "OpenVZ is not supported"
+		echo "OpenVZ ไม่ได้รับการสนับสนุน"
 		exit 1
 fi
 # ==========================================
@@ -32,13 +32,13 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 MYIP=$(curl -s ipinfo.io/ip )
 MYIP=$(curl -sS ipv4.icanhazip.com)
 MYIP=$(curl -sS ifconfig.me )
-echo "Checking VPS"
+echo "การตรวจสอบ VPS"
 IZIN=$(wget -qO- ipinfo.io/ip);
 
 rm -f setup.sh
 clear
 if [ -f "/etc/xray/domain" ]; then
-echo "Script Already Installed"
+echo "สคริปต์ติดตั้งเรียบร้อยแล้ว"
 exit 0
 fi
 mkdir /var/lib/crot;
@@ -80,7 +80,7 @@ chmod +x /etc/set.sh
 history -c
 echo "1.2" > /home/ver
 echo " "
-echo "Installation has been completed!!"echo " "
+echo "การติดตั้งเสร็จสิ้นแล้ว!"echo " "
 echo "============================================================================" | tee -a log-install.txt
 echo "" | tee -a log-install.txt
 echo "----------------------------------------------------------------------------" | tee -a log-install.txt
@@ -92,8 +92,8 @@ echo "   - Stunnel5                : 443, 445"  | tee -a log-install.txt
 echo "   - Dropbear                : 443, 109, 143"  | tee -a log-install.txt
 echo "   - CloudFront Websocket    : "  | tee -a log-install.txt
 echo "   - SSH Websocket TLS       : 443"  | tee -a log-install.txt
-echo "   - SSH Websocket HTTP      : 8880"  | tee -a log-install.txt
-echo "   - Websocket OpenVPN       : 2086"  | tee -a log-install.txt
+echo "   - SSH Websocket HTTP      : 2086"  | tee -a log-install.txt
+echo "   - Websocket OpenVPN       : 2082"  | tee -a log-install.txt
 echo "   - Squid Proxy             : 3128, 8000"  | tee -a log-install.txt
 echo "   - Badvpn                  : 7100, 7200, 7300"  | tee -a log-install.txt
 echo "   - Nginx                   : 89"  | tee -a log-install.txt
@@ -125,7 +125,7 @@ echo "   - White Label" | tee -a log-install.txt
 echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""
 echo ""
-echo " Reboot 15 Sec"
+echo " รีบูต 15 วินาที"
 sleep 15
 rm -f setup.sh
 reboot
