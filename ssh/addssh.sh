@@ -18,9 +18,9 @@ sldomain=$(cat /root/nsdomain)
 cdndomain=$(cat /root/awscdndomain)
 slkey=$(cat /etc/slowdns/server.pub)
 clear
-read -p "Username : " Login
-read -p "Password : " Pass
-read -p "Expired (Days): " masaaktif
+read -p "ชื่อผู้ใช้ : " Login
+read -p "รหัสผ่าน : " Pass
+read -p "ระยะเวลา : " masaaktif
 
 IP=$(wget -qO- ipinfo.io/ip);
 IP=$(curl -s ipinfo.io/ip )
@@ -84,13 +84,13 @@ OpenSSH: 22
 Dropbear: 443, 109, 143
 SSL/TLS: 443
 SSH Websocket SSL/TLS: 443
-SSH Websocket HTTP: 8880
+SSH Websocket HTTP: 2086
 BadVPN UDPGW: 7100,7200,7300
 Proxy Squid: 3128, 8000 [OFF]
 OHP SSH: 8181
 OHP Dropbear: 8282
 OHP OpenVPN: 8383
-OVPN Websocket: 2086
+OVPN Websocket: 2082
 OVPN Port TCP: $ovpn
 OVPN Port UDP: $ovpn2
 OVPN Port SSL: 990
@@ -126,13 +126,13 @@ echo -e "OpenSSH: 22"
 echo -e "Dropbear: 443, 109, 143"
 echo -e "SSL/TLS: 443"
 echo -e "SSH Websocket SSL/TLS: 443"
-echo -e "SSH Websocket HTTP: 8880"
+echo -e "SSH Websocket HTTP: 2086"
 echo -e "BadVPN UDPGW: 7100,7200,7300"
 echo -e "Proxy Squid: 3128, 8000 [OFF]"
 echo -e "OHP SSH: 8181"
 echo -e "OHP Dropbear: 8282"
 echo -e "OHP OpenVPN: 8383"
-echo -e "OVPN Websocket: 2086"
+echo -e "OVPN Websocket: 2082"
 echo -e "OVPN Port TCP: $ovpn"
 echo -e "OVPN Port UDP: $ovpn2"
 echo -e "OVPN Port SSL: 990"
