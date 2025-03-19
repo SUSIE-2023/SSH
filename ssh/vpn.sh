@@ -25,7 +25,7 @@ fi
 # Mod By NevermoreSSH
 # ==================================================
 # Link Hosting Kalian
-akbarvpn="https://github.com/SUSIE-2023/SSH/tree/main/ssh"
+akbarvpn="raw.githubusercontent.com/SUSIE-2023/SSH/main/ssh"
 
 # initialisasi var
 export DEBIAN_FRONTEND=noninteractive
