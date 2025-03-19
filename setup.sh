@@ -19,13 +19,13 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 # Link Hosting Kalian Untuk Ssh Vpn
-akbarvpn="https://github.com/SUSIE-2023/SSH/tree/main/ssh"
+akbarvpn="raw.githubusercontent.com/SUSIE-2023/SSH/main/ssh"
 # Link Hosting Kalian Untuk Xray
-akbarvpnnnnnn="https://github.com/SUSIE-2023/SSH/tree/main/xray"
+akbarvpnnnnnn="raw.githubusercontent.com/SUSIE-2023/SSH/main/xray"
 # Link Hosting Kalian Untuk Websocket
-akbarvpnnnnnnnnn="https://github.com/SUSIE-2023/SSH/tree/main/websocket"
+akbarvpnnnnnnnnn="raw.githubusercontent.com/SUSIE-2023/SSH/main/websocket"
 # Link Hosting Kalian Untuk Ohp
-akbarvpnnnnnnnnnn="https://github.com/SUSIE-2023/SSH/tree/main/ohp"
+akbarvpnnnnnnnnnn="raw.githubusercontent.com/SUSIE-2023/SSH/main/ohp"
 
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
