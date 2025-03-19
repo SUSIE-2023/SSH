@@ -17,16 +17,16 @@ MYIP=$(curl -sS ipv4.icanhazip.com)
 MYIP=$(curl -sS ifconfig.me )
 # ==================================================
 # Link Hosting Kalian
-akbarvpn="https://github.com/SUSIE-2023/SSH/tree/main/ssh"
+akbarvpn="raw.githubusercontent.com/SUSIE-2023/SSH/main/ssh"
 
 # Link Hosting Kalian Untuk Xray
-akbarvpnn="https://github.com/SUSIE-2023/SSH/tree/main/xray"
+akbarvpnn="raw.githubusercontent.com/SUSIE-2023/SSH/main/xray"
 
 # Link Hosting Kalian Untuk Trojan Go
-akbarvpnnn="https://github.com/SUSIE-2023/SSH/tree/main/trojango"
+akbarvpnnn="raw.githubusercontent.com/SUSIE-2023/SSH/main/trojango"
 
 # Link Hosting Kalian Untuk Stunnel5
-akbarvpnnnn="https://github.com/SUSIE-2023/SSH/tree/main/stunnel5"
+akbarvpnnnn="raw.githubusercontent.com/SUSIE-2023/SSH/main/stunnel5"
 
 # initializing var
 export DEBIAN_FRONTEND=noninteractive
