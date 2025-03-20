@@ -55,7 +55,7 @@ wget -O setmenu "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/se
 wget -O slowdnsmenu "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/slowdnsmenu.sh"
 wget -O running "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/running.sh"
 wget -O updatemenu "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/updatemenu.sh"
-wget -O copyrepo "https://raw.githubusercontent.com/NevermoreSSH/hop/main/salin/copyrepo.sh"
+wget -O copyrepo "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/salin/copyrepo.sh"
 wget -O slhost "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/ssh/slhost.sh"
 wget -O sl-download-info "https://raw.githubusercontent.com/NevermoreSSH/hop/main/contohinfo/sl-download-info.sh"
 wget -O menuinfo "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/menuinfo.sh"
