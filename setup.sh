@@ -53,7 +53,7 @@ wget https://${akbarvpnnnnnnnnn}/edu.sh && chmod +x edu.sh && ./edu.sh
 # Ohp Server
 wget https://${akbarvpnnnnnnnnnn}/ohp.sh && chmod +x ohp.sh && ./ohp.sh
 # Install SlowDNS
-wget https://raw.githubusercontent.com/SUSIE-2023/SSH/refs/heads/main/SLDNS/install-sldns && chmod +x install-sldns && ./install-sldns
+wget https://raw.githubusercontent.com/SUSIE-2023/SSH/main/SLDNS/install-sldns && chmod +x install-sldns && ./install-sldns
 
 rm -f /root/ssh-vpn.sh
 rm -f /root/slhost.sh
