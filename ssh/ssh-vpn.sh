@@ -383,7 +383,7 @@ wget -O dns "https://${akbarvpn}/dns.sh"
 wget -O netf "https://${akbarvpn}/netf.sh"
 wget -O bbr2 "https://${akbarvpn}/bbr2.sh"
 wget -O about "https://${akbarvpn}/about.sh"
-wget -O menu "https://raw.githubusercontent.com/NevermoreSSH/hop/main/update/menu.sh"
+wget -O menu "https://raw.githubusercontent.com/SUSIE-2023/SSH/refs/heads/main/update/menu.sh"
 wget -O addssh "https://${akbarvpn}/addssh.sh"
 wget -O trialssh "https://${akbarvpn}/trialssh.sh"
 wget -O delssh "https://${akbarvpn}/delssh.sh"
@@ -403,81 +403,15 @@ wget -O changeport "https://${akbarvpn}/changeport.sh"
 wget -O portovpn "https://${akbarvpn}/portovpn.sh"
 wget -O portwg "https://${akbarvpn}/portwg.sh"
 wget -O porttrojan "https://${akbarvpn}/porttrojan.sh"
-wget -O portsstp "https://${akbarvpn}/portsstp.sh"
-wget -O portsquid "https://${akbarvpn}/portsquid.sh"
-wget -O portvlm "https://${akbarvpn}/portvlm.sh"
-wget -O wbmn "https://${akbarvpn}/webmin.sh"
-wget -O xp "https://${akbarvpn}/xp.sh"
-wget -O swapkvm "https://${akbarvpn}/swapkvm.sh"
-wget -O addvmess "https://${akbarvpnn}/addv2ray.sh"
-wget -O addvless "https://${akbarvpnn}/addvless.sh"
-wget -O addtrojan "https://${akbarvpnn}/addtrojan.sh"
-wget -O addgrpc "https://${akbarvpnn}/addgrpc.sh"
-wget -O cekgrpc "https://${akbarvpnn}/cekgrpc.sh"
-wget -O delgrpc "https://${akbarvpnn}/delgrpc.sh"
-wget -O renewgrpc "https://${akbarvpnn}/renewgrpc.sh"
-wget -O delvmess "https://${akbarvpnn}/delv2ray.sh"
-wget -O delvless "https://${akbarvpnn}/delvless.sh"
-wget -O deltrojan "https://${akbarvpnn}/deltrojan.sh"
-wget -O cekvmess "https://${akbarvpnn}/cekv2ray.sh"
-wget -O cekvless "https://${akbarvpnn}/cekvless.sh"
-wget -O cektrojan "https://${akbarvpnn}/cektrojan.sh"
-wget -O renewvmess "https://${akbarvpnn}/renewv2ray.sh"
-wget -O renewvless "https://${akbarvpnn}/renewvless.sh"
-wget -O renewtrojan "https://${akbarvpnn}/renewtrojan.sh"
-wget -O certv2ray "https://${akbarvpnn}/certv2ray.sh"
-wget -O addtrgo "https://${akbarvpnnn}/addtrgo.sh"
-wget -O deltrgo "https://${akbarvpnnn}/deltrgo.sh"
-wget -O renewtrgo "https://${akbarvpnnn}/renewtrgo.sh"
-wget -O cektrgo "https://${akbarvpnnn}/cektrgo.sh"
-wget -O portsshnontls "https://raw.githubusercontent.com/NevermoreSSH/hop/main/websocket/portsshnontls.sh"
-wget -O portsshws "https://raw.githubusercontent.com/NevermoreSSH/hop/main/websocket/portsshws.sh"
-wget -O userv2ray "https://${akbarvpnn}/userv2ray.sh"
-wget -O uservless "https://${akbarvpnn}/uservless.sh"
 
-wget -O ipsaya "https://raw.githubusercontent.com/NevermoreSSH/hop/main/update/ipsaya.sh"
-wget -O sshovpnmenu "https://raw.githubusercontent.com/NevermoreSSH/hop/main/update/sshovpn.sh"
-wget -O l2tpmenu "https://raw.githubusercontent.com/NevermoreSSH/hop/main/update/l2tpmenu.sh"
-wget -O pptpmenu "https://raw.githubusercontent.com/NevermoreSSH/hop/main/update/pptpmenu.sh"
-wget -O sstpmenu "https://raw.githubusercontent.com/NevermoreSSH/hop/main/update/sstpmenu.sh"
-wget -O wgmenu "https://raw.githubusercontent.com/NevermoreSSH/hop/main/update/wgmenu.sh"
-wget -O ssmenu "https://raw.githubusercontent.com/NevermoreSSH/hop/main/update/ssmenu.sh"
-wget -O ssrmenu "https://raw.githubusercontent.com/NevermoreSSH/hop/main/update/ssrmenu.sh"
-wget -O vmessmenu "https://raw.githubusercontent.com/NevermoreSSH/hop/main/update/vmessmenu.sh"
-wget -O vlessmenu "https://raw.githubusercontent.com/NevermoreSSH/hop/main/update/vlessmenu.sh"
-wget -O grpcmenu "https://raw.githubusercontent.com/NevermoreSSH/hop/main/update/grpcmenu.sh"
-wget -O grpcupdate "https://raw.githubusercontent.com/NevermoreSSH/hop/main/update/grpcupdate.sh"
-wget -O trmenu "https://raw.githubusercontent.com/NevermoreSSH/hop/main/update/trmenu.sh"
-wget -O trgomenu "https://raw.githubusercontent.com/NevermoreSSH/hop/main/update/trgomenu.sh"
-wget -O setmenu "https://raw.githubusercontent.com/NevermoreSSH/hop/main/update/setmenu.sh"
-wget -O slowdnsmenu "https://raw.githubusercontent.com/NevermoreSSH/hop/main/update/slowdnsmenu.sh"
-wget -O running "https://raw.githubusercontent.com/NevermoreSSH/hop/main/update/running.sh"
-wget -O updatemenu "https://raw.githubusercontent.com/NevermoreSSH/hop/main/update/updatemenu.sh"
-wget -O sl-fix "https://raw.githubusercontent.com/NevermoreSSH/hop/main/sslh-fix/sl-fix"
-wget -O install-sldns "https://raw.githubusercontent.com/NevermoreSSH/hop/main/SLDNS/install-sldns"
-wget -O fssw "https://raw.githubusercontent.com/NevermoreSSH/hopp/main/fssw/fssw.sh"
+wget -O ipsaya "https://raw.githubusercontent.com/SUSIE-2023/SSH/refs/heads/main/update/ipsaya.sh"
+wget -O sshovpnmenu "https://raw.githubusercontent.com/SUSIE-2023/SSH/refs/heads/main/update/sshovpn.sh"
 
 chmod +x sl-fix
 chmod +x fssw
 chmod +x install-sldns
 chmod +x ipsaya
 chmod +x sshovpnmenu
-chmod +x l2tpmenu
-chmod +x pptpmenu
-chmod +x sstpmenu
-chmod +x wgmenu
-chmod +x ssmenu
-chmod +x ssrmenu
-chmod +x vmessmenu
-chmod +x vlessmenu
-chmod +x grpcmenu
-chmod +x grpcupdate
-chmod +x trmenu
-chmod +x trgomenu
-chmod +x setmenu
-chmod +x slowdnsmenu
-chmod +x running
-chmod +x updatemenu
 
 
 chmod +x portsshnontls
@@ -509,50 +443,6 @@ chmod +x changeport
 chmod +x portovpn
 chmod +x portwg
 chmod +x porttrojan
-chmod +x portsstp
-chmod +x portsquid
-chmod +x portvlm
-chmod +x wbmn
-chmod +x xp
-chmod +x swapkvm
-chmod +x addvmess
-chmod +x addvless
-chmod +x addtrojan
-chmod +x addgrpc
-chmod +x delgrpc
-chmod +x delvmess
-chmod +x delvless
-chmod +x deltrojan
-chmod +x cekgrpc
-chmod +x cekvmess
-chmod +x cekvless
-chmod +x cektrojan
-chmod +x renewgrpc
-chmod +x renewvmess
-chmod +x renewvless
-chmod +x renewtrojan
-chmod +x certv2ray
-chmod +x addtrgo
-chmod +x deltrgo
-chmod +x renewtrgo
-chmod +x cektrgo
-chmod +x userv2ray
-chmod +x uservless
-#echo "0 5 * * * root clearlog && reboot" >> /etc/crontab
-echo "5 1 * * * root delexp && xp && restart" >> /etc/crontab
-echo "5 4 * * * root clearlog && sslh-fix-reboot" >> /etc/crontab
-echo "0 0 * * * root clearlog" >> /etc/crontab
-echo "0 1 * * * root delexp" >> /etc/crontab
-echo "0 2 * * * root xp" >> /etc/crontab
-echo "0 3 * * * root restart" >> /etc/crontab
-echo "0 4 * * * root sslh-fix-reboot" >> /etc/crontab
-echo "0 5 * * * root reboot" >> /etc/crontab
-echo "0 6 * * * root backup" >> /etc/crontab
-echo "0 23 * * * root backup" >> /etc/crontab
-echo "5 1 * * * root /usr/bin/delexp" >> /etc/crontab
-echo "5 2 * * * root /usr/bin/xp" >> /etc/crontab
-echo "5 23 * * * root /usr/bin/backup" >> /etc/crontab
-#echo "1 * * * * root systemctl restart server-sldns" >> /etc/crontab
 
 # remove unnecessary files
 cd
