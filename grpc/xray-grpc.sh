@@ -319,10 +319,10 @@ systemctl enable vless-grpc
 systemctl restart vless-grpc
 #
 cd /usr/bin
-wget -O addgrpc "https://raw.githubusercontent.com/NevermoreSSH/hop/main/grpc/addgrpc.sh"
-wget -O delgrpc "https://raw.githubusercontent.com/NevermoreSSH/hop/main/grpc/delgrpc.sh"
-wget -O renewgrpc "https://raw.githubusercontent.com/NevermoreSSH/hop/main/grpc/renewgrpc.sh"
-wget -O cekgrpc "https://raw.githubusercontent.com/NevermoreSSH/hop/main/grpc/cekgrpc.sh"
+wget -O addgrpc "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/grpc/addgrpc.sh"
+wget -O delgrpc "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/grpc/delgrpc.sh"
+wget -O renewgrpc "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/grpc/renewgrpc.sh"
+wget -O cekgrpc "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/grpc/cekgrpc.sh"
 
 chmod +x addgrpc
 chmod +x delgrpc
