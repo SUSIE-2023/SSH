@@ -453,9 +453,9 @@ wget -O setmenu "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/se
 wget -O slowdnsmenu "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/slowdnsmenu.sh"
 wget -O running "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/running.sh"
 wget -O updatemenu "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/updatemenu.sh"
-wget -O sl-fix "https://raw.githubusercontent.com/NevermoreSSH/hop/main/sslh-fix/sl-fix"
+wget -O sl-fix "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/sslh-fix/sl-fix"
 wget -O install-sldns "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/SLDNS/install-sldns"
-wget -O fssw "https://raw.githubusercontent.com/NevermoreSSH/hopp/main/fssw/fssw.sh"
+wget -O fssw "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/fssw/fssw.sh"
 
 chmod +x sl-fix
 chmod +x fssw
