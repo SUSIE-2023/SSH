@@ -2,7 +2,7 @@
 # ==========================================
 # Color
 # hapus menu
-rm -rf menu
+rm -rf apps
 rm -rf ipsaya
 rm -rf sl-fix
 rm -rf sshovpnmenu
@@ -23,9 +23,11 @@ rm -rf slowdnsmenu
 rm -rf running
 rm -rf copyrepo
 
+rm -rf fix_stunnel_xray
+
 # download menu
 cd /usr/bin
-rm -rf menu
+rm -rf apps
 rm -rf menuinfo
 rm -rf restart
 rm -rf slhost
@@ -34,7 +36,7 @@ rm -rf addssh
 wget -O install-sldns "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/SLDNS/install-sldns"
 wget -O restart "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/ssh/restart.sh"
 wget -O addssh "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/ssh/addssh.sh"
-wget -O menu "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/menu.sh"
+wget -O apps "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/apps.sh"
 wget -O ipsaya "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/ipsaya.sh"
 wget -O sl-fix "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/sslh-fix/sl-fix"
 wget -O sshovpnmenu "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/sshovpn.sh"
@@ -56,12 +58,11 @@ wget -O slowdnsmenu "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/updat
 wget -O running "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/running.sh"
 wget -O updatemenu "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/updatemenu.sh"
 wget -O copyrepo "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/salin/copyrepo.sh"
+wget -O fix_stunnel_xray "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/fix_stunnel_xray.sh"
 wget -O slhost "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/ssh/slhost.sh"
 wget -O sl-download-info "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/contohinfo/sl-download-info.sh"
 wget -O menuinfo "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/menuinfo.sh"
-wget -O install-ss-plugin "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/shadowsocks-plugin/install-ss-plugin.sh"
 
-chmod +x install-ss-plugin
 chmod +x xray-grpc
 chmod +x install-sldns
 chmod +x restart
@@ -73,7 +74,8 @@ chmod +x sl-download-info
 chmod +x menuinfo
 chmod +x slhost
 chmod +x copyrepo
-chmod +x menu
+chmod +x fix_stunnel_xray
+chmod +x apps
 chmod +x ipsaya
 chmod +x sl-fix
 chmod +x sshovpnmenu
@@ -95,6 +97,5 @@ chmod +x running
 chmod +x updatemenu
 sl-download-info
 #install-sldns
-#install-ss-plugin
 #xray-grpc
 cd
