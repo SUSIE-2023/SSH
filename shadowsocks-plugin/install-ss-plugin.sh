@@ -17,11 +17,11 @@ mkdir -p /usr/local/bin/
 mkdir -p /etc/shadowsocks
 rm -rf /usr/bin/shadowhost
 cd /usr/bin
-wget -O addss-p "https://raw.githubusercontent.com/NevermoreSSH/hop/main/shadowsocks-plugin/addss-p.sh"
+wget -O addss-p "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/shadowsocks-plugin/addss-p.sh"
 chmod +x addss-p
 #wget -O shadowhost "https://raw.githubusercontent.com/NevermoreSSH/hop/main/shadowsocks-plugin/shadowhost.sh"
 #chmod +x shadowhost && shadowhost
-wget -O delss "https://raw.githubusercontent.com/NevermoreSSH/hop/main/shadowsocks/delss.sh"
+wget -O delss "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/shadowsocks/delss.sh"
 cd
 MYIP=$(wget -qO- ipinfo.io/ip);
 clear
