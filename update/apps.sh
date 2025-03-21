@@ -1,5 +1,40 @@
 #!/bin/bash
 clear
+
+fix_stunnel_xray() {
+    echo "กรุณากรอกข้อมูลสำหรับใบรับรอง SSL"
+
+    read -p "Country Code (เช่น TH): " country
+    read -p "State/Province (เช่น Bangkok): " state
+    read -p "City (เช่น Bangkok): " city
+    read -p "Organization (กด Enter เพื่อเว้นว่าง): " org
+    read -p "Organizational Unit (กด Enter เพื่อเว้นว่าง): " unit
+    read -p "Common Name (ใส่โดเมนหรือ IP เช่น th1.hdvpn.win): " common_name
+    read -p "Email Address: " email
+
+    echo "กำลังสร้างใบรับรอง SSL..."
+    openssl req -x509 -newkey rsa:2048 -keyout /etc/xray/xray.key -out /etc/xray/xray.crt -days 365 \
+        -subj "/C=$country/ST=$state/L=$city/O=${org:-None}/OU=${unit:-None}/CN=$common_name/emailAddress=$email"
+
+    echo "กำลังตั้งค่าสิทธิ์ให้กับไฟล์ใบรับรอง..."
+    chmod 644 /etc/xray/xray.crt
+    chmod 600 /etc/xray/xray.key
+
+    echo "กำลังรีสตาร์ทบริการ stunnel5 และ xray..."
+    systemctl restart stunnel5
+    systemctl restart xray
+
+    echo "กำลังตรวจสอบสถานะของบริการ stunnel5..."
+    systemctl status stunnel5
+
+    echo "กำลังตรวจสอบการฟังพอร์ตของ stunnel5..."
+    netstat -tulnp | grep stunnel5
+
+    echo "การติดตั้งและตั้งค่าเสร็จสมบูรณ์!"
+    read -p "กด Enter เพื่อกลับสู่เมนูหลัก..."
+    apps
+}
+
 m="\033[0;1;36m"
 y="\033[0;1;37m"
 yy="\033[0;1;32m"
