@@ -75,7 +75,7 @@ echo -e "   ${YB} SSH     VMESS     VLESS     TROJAN     TROJANGO          "
 echo -e "${y}     $ssh        $vmess         $vless         $tr           $trgo         "
 echo -e "${BB}————————————————————————————————————————————————————————${NC}"
 echo -e "$YB 1$y.  SSH WEBSOCKET MENU  $wh"
-echo -e "$YB 2$y.  L2TP MENU$wh"
+echo -e "$YB 2$y.  FIX Stunnel & Xray SSL$wh"
 echo -e "$YB 3$y.  PPTP MENU$wh"
 echo -e "$YB 4$y.  SSTP MENU$wh"
 echo -e "$YB 5$y.  WIREGUARD MENU$wh"
@@ -108,7 +108,7 @@ sshovpnmenu
 ;;
 2)
 clear
-l2tpmenu
+fix_stunnel_xray
 ;;
 3)
 clear
