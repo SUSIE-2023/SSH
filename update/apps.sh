@@ -35,6 +35,24 @@ fix_stunnel_xray() {
     apps
 }
 
+set_auto_reboot() {
+    echo "🕛 ตั้งค่ารีบูตอัตโนมัติทุกวันตอนเที่ยงคืน..."
+    (crontab -l 2>/dev/null; echo "0 0 * * * reboot") | crontab -
+    echo "✅ ตั้งค่าเสร็จแล้ว!"
+}
+
+clean_system() {
+    echo "🗑️ กำลังล้างไฟล์ขยะ..."
+    rm -rf /var/log/*.log
+    sync; echo 3 > /proc/sys/vm/drop_caches
+    echo "✅ ทำความสะอาดระบบเสร็จแล้ว!"
+}
+
+check_clients() {
+    echo "📊 กำลังดูว่ามีใครกำลังเชื่อมต่อ VPN อยู่..."
+    netstat -tnpa | grep ESTABLISHED | grep xray
+}
+
 m="\033[0;1;36m"
 y="\033[0;1;37m"
 yy="\033[0;1;32m"
@@ -111,9 +129,9 @@ echo -e "${y}     $ssh        $vmess         $vless         $tr           $trgo 
 echo -e "${BB}————————————————————————————————————————————————————————${NC}"
 echo -e "$YB 1$y.  SSH WEBSOCKET MENU  $wh"
 echo -e "$YB 2$y.  FIX Stunnel & Xray SSL$wh"
-echo -e "$YB 3$y.  PPTP MENU$wh"
-echo -e "$YB 4$y.  SSTP MENU$wh"
-echo -e "$YB 5$y.  WIREGUARD MENU$wh"
+echo -e "$YB 3$y.  ตั้งค่ารีบูตอัตโนมัติทุกวัน$wh"
+echo -e "$YB 4$y.  ล้างไฟล์ขยะ และ RAM$wh"
+echo -e "$YB 5$y.  ดูสถานะการเชื่อมต่อของลูกค้า$wh"
 echo -e "$YB 6$y.  SHADOWSOCKS MENU$wh"
 echo -e "$YB 7$y.  SHADOWSOCKSR MENU$wh"
 echo -e "$YB 8$y.  XRAY VMESS MENU$wh"
@@ -147,15 +165,15 @@ fix_stunnel_xray
 ;;
 3)
 clear
-pptpmenu
+set_auto_reboot
 ;;
 4)
 clear
-sstpmenu
+clean_system
 ;;
 5)
 clear
-wgmenu
+check_clients
 ;;
 6)
 clear
