@@ -36,7 +36,7 @@ wget -O restart "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/ssh/resta
 wget -O addssh "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/ssh/addssh.sh"
 wget -O menu "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/menu.sh"
 wget -O ipsaya "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/ipsaya.sh"
-wget -O sl-fix "https://raw.githubusercontent.com/NevermoreSSH/hop/main/sslh-fix/sl-fix"
+wget -O sl-fix "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/sslh-fix/sl-fix"
 wget -O sshovpnmenu "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/sshovpn.sh"
 wget -O l2tpmenu "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/l2tpmenu.sh"
 wget -O pptpmenu "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/pptpmenu.sh"
@@ -46,7 +46,7 @@ wget -O ssmenu "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/ssm
 wget -O ssrmenu "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/ssrmenu.sh"
 wget -O vmessmenu "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/vmessmenu.sh"
 wget -O vlessmenu "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/vlessmenu.sh"
-wget -O xray-grpc "https://raw.githubusercontent.com/NevermoreSSH/hop/main/grpc/xray-grpc.sh"
+wget -O xray-grpc "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/grpc/xray-grpc.sh"
 wget -O grpcmenu "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/grpcmenu.sh"
 wget -O grpcupdate "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/grpcupdate.sh"
 wget -O trmenu "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/trmenu.sh"
@@ -57,9 +57,9 @@ wget -O running "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/ru
 wget -O updatemenu "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/updatemenu.sh"
 wget -O copyrepo "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/salin/copyrepo.sh"
 wget -O slhost "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/ssh/slhost.sh"
-wget -O sl-download-info "https://raw.githubusercontent.com/NevermoreSSH/hop/main/contohinfo/sl-download-info.sh"
+wget -O sl-download-info "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/contohinfo/sl-download-info.sh"
 wget -O menuinfo "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/menuinfo.sh"
-wget -O install-ss-plugin "https://raw.githubusercontent.com/NevermoreSSH/hop/main/shadowsocks-plugin/install-ss-plugin.sh"
+wget -O install-ss-plugin "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/shadowsocks-plugin/install-ss-plugin.sh"
 
 chmod +x install-ss-plugin
 chmod +x xray-grpc
