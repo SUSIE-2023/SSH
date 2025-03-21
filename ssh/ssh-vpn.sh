@@ -383,7 +383,6 @@ wget -O dns "https://${akbarvpn}/dns.sh"
 wget -O netf "https://${akbarvpn}/netf.sh"
 wget -O bbr2 "https://${akbarvpn}/bbr2.sh"
 wget -O about "https://${akbarvpn}/about.sh"
-wget -O menu "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/menu.sh"
 wget -O apps "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/apps.sh"
 wget -O addssh "https://${akbarvpn}/addssh.sh"
 wget -O trialssh "https://${akbarvpn}/trialssh.sh"
@@ -489,7 +488,6 @@ chmod +x addhost
 chmod +x dns
 chmod +x netf
 chmod +x bbr2
-chmod +x menu
 chmod +x apps
 chmod +x addssh
 chmod +x trialssh
