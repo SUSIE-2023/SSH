@@ -23,8 +23,6 @@ rm -rf slowdnsmenu
 rm -rf running
 rm -rf copyrepo
 
-rm -rf fix_stunnel_xray
-
 # download menu
 cd /usr/bin
 rm -rf apps
@@ -58,7 +56,6 @@ wget -O slowdnsmenu "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/updat
 wget -O running "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/running.sh"
 wget -O updatemenu "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/updatemenu.sh"
 wget -O copyrepo "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/salin/copyrepo.sh"
-wget -O fix_stunnel_xray "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/fix_stunnel_xray.sh"
 wget -O slhost "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/ssh/slhost.sh"
 wget -O sl-download-info "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/contohinfo/sl-download-info.sh"
 wget -O menuinfo "https://raw.githubusercontent.com/SUSIE-2023/SSH/main/update/menuinfo.sh"
@@ -74,7 +71,6 @@ chmod +x sl-download-info
 chmod +x menuinfo
 chmod +x slhost
 chmod +x copyrepo
-chmod +x fix_stunnel_xray
 chmod +x apps
 chmod +x ipsaya
 chmod +x sl-fix
